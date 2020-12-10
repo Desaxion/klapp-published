@@ -1,0 +1,256 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.Presents {
+    transition: 200ms;
+}
+
+.AddPresent {
+  border-radius: 25px;
+}
+
+.Entry{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+
+.EntryHeader {
+  border-color: rgb(0, 0, 0);
+  border-style: ridge;
+  background: rgb(252, 249, 209);
+  border-radius: 25px;
+  height: 50px;
+  margin-top: 4px;
+  width: 100vw;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.PersonEntry{
+  border-color: rgb(0, 0, 0);
+  border-style: ridge;
+  background: rgb(252, 249, 209);
+  border-radius: 25px;
+  height: 50px;
+  margin-top: 4px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+
+}
+.center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.CheckIcon{
+  height: 30px;
+}
+
+.PresentAmount{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Sack {
+  height: 30px;
+}
+
+.center img{
+  height: 50px;
+  margin: 10px;
+}
+
+.PersonDelete{
+  height: 30px;
+}
+
+.EditPerson{
+  height: 30px;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes drawBar {
+  0%{
+  transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(100%);
+  }
+}
+
+@keyframes fadein {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+.bottomButtons {
+  display: flex;
+  flex-direction: row;
+ justify-content: space-around;
+ height: 100%;
+}
+
+.bottomButtons>* {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContent {
+  flex: 1;
+  overflow: scroll;
+}
+
+
+@font-face {
+  font-family: 'Marons';
+  src: local('Marons'), url(./Marons-Regular.ttf) format('truetype');
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'), url(./Roboto-Regular.ttf) format('truetype');
+  font-family: 'RBold';
+  src: local('Roboto-Bold'), url(./Roboto-Bold.ttf) format('truetype');
+  font-family: 'Circular';
+  src: local('CircularStd-Bold'), url(./CircularStd-Bold.otf) format('opentype');
+}
+
+h2 {
+  font-family: Roboto;
+
+}
+
+.appTextBold {
+  font-family: Roboto-Bold;
+}
+
+.Name{
+  color: white;
+  font-family: Marons;   /*Must Stay!!!*/
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  transform-origin: 0 0;
+  margin: 0;
+  text-align: center;
+  font-size: 38px;
+}
+
+.EntryElements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+.footer{
+  width: 100vw;
+  background-color: #7F0000;
+  height:80px;
+}
+
+.Header{
+  width:100vw;
+  background-color: #7F0000;
+  margin: 0;
+  padding-top:15px;
+  padding-bottom:15px;
+}
+
+.h1 {
+  left:0;
+}
+
+.animatedBar {
+-webkit-animation-name: drawBar;
+animation-name: drawBar;
+-webkit-animation-duration: .5s;
+animation-duration: .5s;
+transform-origin: 0 0;
+}
+
+
+
+.Budgett{
+ border-radius: 10px;
+ align-items: center;
+
+}
+
+
+#budget-list{
+  border: 0;
+  padding: 0 20px;
+  border-radius: 10px;
+}
+
+#budget-list input:focus{
+  outline:none;
+}
+
+#budget-list button{
+  border-radius: 10px;
+  border:0;
+  background-color: red;
+  cursor: pointer;
+}
+#budget-list input:focus,#budget-list button:focus{
+  outline: none;
+}
+
+.popupContainer > div {
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Lägg till person*/
+.aText{
+  font-size: large;
+
+}
+
+/* Budget text*/
+.BudgetButton{
+  cursor: pointer;
+  font-size: large;
+
+}
